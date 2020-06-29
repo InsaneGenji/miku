@@ -1,0 +1,146 @@
+body {
+    background: url(../img/bg-miku.jpg) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+/* 导航栏 */
+nav {
+    height: 39px;
+    background-color: rgba(255, 255, 255, .88);
+    padding: 0 30px;
+}
+
+nav .first {
+    height: 100%;
+    line-height: 39px;
+    padding: 0 9px;
+    cursor: pointer;
+    float: right;
+    position: relative;
+}
+
+nav .first:hover {
+    background-color: rgba(255, 255, 255, .78);
+}
+
+nav .first:hover ul {
+    display: block;
+}
+
+nav .first ul {
+    display: none;
+    background-color: rgba(255, 255, 255, .78);
+    position: absolute;
+    top: 39px;
+    right: 0;
+}
+
+nav .first ul .second {
+    width: 80px;
+    text-align: center;
+    padding: 9px 0;
+}
+
+nav .first ul .second:hover {
+    background-color: rgba(0, 0, 0, .39);
+}
+
+
+/* LOGO */
+
+.logo {
+    width: 368px;
+    height: 169px;
+    background-image: url(../img/logo-miku.png);
+    background-size: cover;
+    position: absolute;
+    top: 89px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transition: .39s;
+}
+
+.logo:hover {
+    transform: scale(1.05, 1.05);
+}
+
+
+
+/* 搜索栏 */
+
+form {
+    width: 777px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 294px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transition: .39s;
+}
+
+form input[type="search"] {
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.78);
+    padding: 0 50px 0 57px;
+    background: url(../img/search-icon.png) no-repeat 9px center;
+    background-size: 39px 39px;
+    border-radius: 9px;
+    border: 1px solid grey;
+}
+
+form input[type="search"]:focus {
+    box-shadow: 0 0 39px rgba(0, 156, 155, 0.69);
+}
+
+form input[type="submit"] {
+    width: 50px;
+    height: 100%;
+    background: url("../img/search-button-link.png") no-repeat right center;
+    background-size: 50px 100%;
+    border: none;
+    border-radius: 0 9px 9px 0;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+}
+
+form input[type="submit"]:hover {
+    background-image: url("../img/search-button-hover.png");
+}
+
+form input[type="submit"]:active {
+    background-image: url("../img/search-button-active.png");
+}
+
+
+
+/* 响应式布局 */
+
+@media all and (max-width: 844px) {
+    form {
+        width: 555px;
+    }
+}
+
+@media all and (max-width: 588px) {
+    .logo {
+        width: 218px;
+        height: 100px;
+        top: 110px;
+    }
+
+    form {
+        width: 250px;
+        top: 250px;
+    }
+}
