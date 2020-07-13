@@ -12,7 +12,25 @@
 </template>
 
 <script>
-	export default {}
+	export default {
+		data() {
+			return {
+				pageWidth: document.body.clientWidth
+			};
+		},
+		mounted() {
+			this.response();
+		},
+		methods: {
+			response() {
+				window.onresize = () => {
+					if (document.body.clientWidth < 740) {
+						console.log(document.body.clientWidth)
+					}
+				}
+			}
+		}
+	}
 </script>
 
 <style scoped lang="scss">

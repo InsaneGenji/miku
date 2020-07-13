@@ -5,7 +5,7 @@
 </template>
 
 <script>
-	import Miku from './components/Miku.vue'
+	import Miku from './views/Miku.vue';
 
 	export default {
 		name: 'App',
