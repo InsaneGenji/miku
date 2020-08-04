@@ -1,8 +1,0 @@
-{
-	"pages": [{
-		"path": "pages/miku/miku"
-	}],
-	"globalStyle": {
-		"navigationStyle": "custom"
-	}
-}
