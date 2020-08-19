@@ -34,7 +34,7 @@
 					if (document.body.clientWidth < 740) {
 						console.log(document.body.clientWidth)
 					}
-				}
+				};
 			}
 		}
 	}
