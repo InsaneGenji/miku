@@ -21,4 +21,18 @@
 		background-size: cover;
 		background-attachment: fixed;
 	}
+
+	.container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.icon {
+		width: 1em;
+		height: 1em;
+		vertical-align: -0.15em;
+		fill: currentColor;
+		overflow: hidden;
+	}
 </style>
