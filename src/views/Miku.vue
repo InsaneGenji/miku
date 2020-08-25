@@ -15,8 +15,7 @@
 	export default {
 		data() {
 			return {
-				focusFlag: false,
-				pageWidth: document.body.clientWidth
+				focusFlag: false
 			};
 		},
 		mounted() {
