@@ -4,7 +4,7 @@
 		<a href="https://zh.moegirl.org/初音未来#" class="logo"></a>
 
 		<!-- 搜索栏 -->
-		<form title="在网络上搜索" action="http://www.baidu.com/s" :class="{focus: focusFlag }">
+		<form title="在网络上搜索" action="http://www.baidu.com/s" :class="{focus: focusFlag}">
 			<input type="search" placeholder="在网络上搜索" name="wd" @focus="inputFocus" @blur="inputBlur">
 			<input type="submit" value="" title="搜索">
 		</form>
